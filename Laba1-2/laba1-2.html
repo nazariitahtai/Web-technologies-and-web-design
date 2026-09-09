@@ -1,4 +1,4 @@
-  <p align="center"> <b><u> Практична робота №1 </b></u> </p>
+ <p align="center"> <b><u> Практична робота №1 </b></u> </p>
   <p align="right"> <i> Виконаd студент: Тахтай Н.В. </i></p>
   <hr>
   <p align="center"> <b> "Вітаю Вас на моїй web-сторінці!" </b> </p>
@@ -242,5 +242,72 @@
         <li>Їзда на мотоциклі</li>    
     </ul>
     <hr>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 7 - 10</title>
+</head>
+<body>
+
+    <!-- Завдання 7-8: Форма замовлення -->
+    <p align="center">Форма замовлення</p>
+
+    <form action="processorder.php" method="post">
+        <b>П. І. Пб. замовника: </b>
+        <input type="text" name="fam" size="40">
+        <br><br>
+
+        <table border="0">
+            <tr bgcolor="#cccccc">
+                <td align="center">Виріб</td>
+                <td align="center" width="150">Найменування</td>
+                <td align="center" width="70">Кількість</td>
+            </tr>
+            <tr>
+                <td align="center">Шини</td>
+                <td align="center"><input type="text" name="tirename" size="10"></td>
+                <td align="center"><input type="text" name="tireqty" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td align="center">Машинне мастило</td>
+                <td align="center"><input type="text" name="oilname" size="10"></td>
+                <td align="center"><input type="text" name="oilqty" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td align="center">Свічки запалювання</td>
+                <td align="center"><input type="text" name="sparkname" size="10"></td>
+                <td align="center"><input type="text" name="sparkqty" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="left">
+                    <br>
+                    <input type="submit" name="submit" value="Ввести замовлення">
+                    <input type="reset" name="reset" value="Очистити форму">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr> 
+
+    
+    <p><b>Вітаємо Вас на нашому сайті</b></p>
+
+    <form method="post">
+        <p>Введіть логін:<br>
+        <input type="text" name="login"></p>
+
+        <p>Введіть пароль:<br>
+        <input type="password" name="password"></p>
+
+        <p>
+            <input type="submit" name="submit" value="Увійти">
+            <input type="reset" name="reset" value="Очистити">
+        </p>
+    </form>
+
 </body>
 </html>

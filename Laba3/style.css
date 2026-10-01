@@ -1,0 +1,108 @@
+/*  1 ЗАВДАННЯ  */
+body {
+    background-color: #e1e1e1;
+    font-family: Arial, sans-serif;
+    padding-bottom: 50px;
+}
+
+.wrapper { 
+    width: 940px; 
+    margin: 0 auto; 
+    margin-bottom: 40px; 
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline; 
+    font-weight: 600;
+    font-size: 18px; 
+    color: #333333;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.autor, .topic, .definition { 
+    float: left; 
+    padding: 20px; 
+    margin: 10px; 
+    height: 200px; 
+    width: 280px; 
+    box-sizing: border-box; 
+}
+
+.autor { background-color: #4583e6; color: #ffffff; }
+.topic { background-color: #336e20; color: #ffffff; }
+.definition { background-color: #7030a0; color: #ffffff; }
+
+/* СТИЛІ ДЛЯ ЗАВДАННЯ 2*/
+.t2-top, .t2-left, .t2-center, .t2-right {
+    position: absolute; 
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t2-top {
+    top: 80px; left: 80px; 
+    width: 780px; height: 50px;
+    background-color: #1ba048; 
+}
+.t2-left {
+    top: 140px; left: 80px; 
+    width: 200px; height: 200px;
+    background-color: #5b8cd6; 
+    color: white;
+}
+.t2-center {
+    top: 140px; left: 290px; 
+    width: 360px; height: 200px;
+    background-color: #8cc63f; 
+}
+.t2-right {
+    top: 140px; left: 660px; 
+    width: 200px; height: 200px;
+    background-color: #5b8cd6; 
+    color: white;
+}
+
+/*СТИЛІ ДЛЯ ЗАВДАННЯ 3 */
+.hover-group {
+    position: relative;
+    margin-left: 100px;
+}
+
+.trigger {
+    position: absolute;
+    top: 0; left: 0;
+    width: 150px;
+    padding: 10px;
+    background-color: #00b050;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.target {
+    position: absolute;
+    top: 0; left: 180px; 
+    width: 250px;
+    height: 150px;
+    background-color: #5b8cd6;
+    color: white;
+    border: 2px solid #666;
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.trigger:hover + .target { display: flex; }
+.target:hover { display: flex; }

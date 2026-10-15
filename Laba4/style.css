@@ -127,7 +127,7 @@ body {
     color: #19344d;
 }
 
-/* Розташування фотографій */
+
 .photorow {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -158,7 +158,7 @@ body {
     background-color: #e1edf5;
 }
 
-/* Про сайт */
+
 .about {
     margin-top: 40px;
     padding: 25px;

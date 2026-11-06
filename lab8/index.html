@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive - Лабораторна робота №8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>AutoDrive</h1>
+    <p>Каталог легкових автомобілів</p>
+</div>
+
+<!-- Menu -->
+<div class="menu">
+    <a href="index.html">Головна</a>
+    <a href="#tabs">Категорії</a>
+    <a href="#form">Підбір авто</a>
+    <a href="slider-example.html">Приклад слайдера</a>
+    <a href="auth.html">Реєстрація / Вхід</a>
+</div>
+
+<!-- Слайдер (варіант 17) -->
+<div class="slider-wrap">
+    <div class="slider">
+        <span class="arrow" onclick="minusSlide()">&#10094;</span>
+        <div id="slides" class="slides"></div>
+        <span class="arrow" onclick="plusSlide()">&#10095;</span>
+    </div>
+</div>
+
+<div class="content">
+
+    <!-- Завдання 1. Таби -->
+    <h2 id="tabs">Категорії автомобілів</h2>
+
+    <table class="tabs">
+        <tr>
+            <td id="tab1" onclick="info_for_tab(1)">Седани</td>
+            <td id="tab2" onclick="info_for_tab(2)">Хетчбеки</td>
+            <td id="tab3" onclick="info_for_tab(3)">Кросовери</td>
+            <td id="tab4" onclick="info_for_tab(4)">Електромобілі</td>
+            <td id="tab5" onclick="info_for_tab(5)">Бюджетні авто</td>
+        </tr>
+    </table>
+
+    <div id="tabContent" class="tab-content"></div>
+
+
+    <!-- Завдання 4. Форма з елементами керування -->
+    <h2 id="form">Форма підбору автомобіля</h2>
+
+    <form name="form" class="car-form" onsubmit="return validate()">
+        <p>Прізвище: <input type="text" name="surname" oninput="checkSurname()">
+            <span id="surnamef" class="error"></span></p>
+
+        <p>Ім'я: <input type="text" name="name" oninput="checkName()">
+            <span id="namef" class="error"></span></p>
+
+        <p>Email: <input type="text" name="email" placeholder="yourmail@gmail.com" oninput="checkEmail()">
+            <span id="emailf" class="error"></span></p>
+
+        <p>Номер телефону: <input type="text" name="phone" placeholder="+380501234567" oninput="checkPhone()">
+            <span id="phonef" class="error"></span></p>
+
+        <hr>
+
+        <p>Оберіть тип кузова:</p>
+        <label><input type="radio" name="body" value="Седан" onchange="checkBody()"> Седан</label><br>
+        <label><input type="radio" name="body" value="Хетчбек" onchange="checkBody()"> Хетчбек</label><br>
+        <label><input type="radio" name="body" value="Кросовер" onchange="checkBody()"> Кросовер</label><br>
+        <span id="bodyf" class="error"></span>
+
+        <p>Оберіть тип пального:
+            <select name="fuel">
+                <option>Бензин</option>
+                <option>Дизель</option>
+                <option>Гібрид</option>
+                <option>Електро</option>
+            </select>
+        </p>
+
+        <hr>
+
+        <p>Оберіть бажану ціну:<br>
+            <input type="range" name="price" min="3000" max="50000" step="500" value="20000"
+                   oninput="document.getElementById('priceValue').innerHTML = this.value + '$'">
+            <span id="priceValue">20000$</span>
+        </p>
+
+        <hr>
+
+        <p>Потрібен тест-драйв <input type="checkbox" name="testdrive"></p>
+
+        <p>Додаткові побажання:<br>
+            <textarea name="comment" rows="3" cols="40"></textarea></p>
+
+        <input type="submit" value="Відправити" class="btn">
+        <input type="reset" value="Скасувати" class="btn" onclick="clearErrors()">
+
+        <p id="formResult" class="success"></p>
+    </form>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>Розробник: Тахтай Н.В., група ІТ-41/1</p>
+    <p>Лабораторна робота №8. Варіант 17.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

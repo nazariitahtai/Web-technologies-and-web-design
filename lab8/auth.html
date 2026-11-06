@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDrive - Реєстрація та вхід</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>AutoDrive</h1>
+    <p>Каталог легкових автомобілів</p>
+</div>
+
+<!-- Menu -->
+<div class="menu">
+    <a href="index.html">Головна</a>
+    <a href="index.html#tabs">Категорії</a>
+    <a href="index.html#form">Підбір авто</a>
+    <a href="slider-example.html">Приклад слайдера</a>
+    <a href="auth.html">Реєстрація / Вхід</a>
+</div>
+
+<div class="content">
+    <div class="auth">
+
+        <!-- Завдання 5. Форма реєстрації -->
+        <form name="register" class="auth-form" onsubmit="return validateRegister()">
+            <h2>Реєстрація</h2>
+
+            <p>Логін:<br>
+                <input type="text" id="login" placeholder="Латинські літери та цифри">
+                <span id="loginf" class="error"></span></p>
+
+            <p>Email:<br>
+                <input type="text" id="regEmail" placeholder="yourmail@gmail.com">
+                <span id="regEmailf" class="error"></span></p>
+
+            <p>Пароль:<br>
+                <input type="password" id="regPassword" placeholder="Не менше 6 символів">
+                <span id="regPasswordf" class="error"></span></p>
+
+            <p>Повторіть пароль:<br>
+                <input type="password" id="regPassword2">
+                <span id="regPassword2f" class="error"></span></p>
+
+            <input type="submit" value="Зареєструватися" class="btn">
+            <p id="registerResult" class="success"></p>
+        </form>
+
+        <!-- Завдання 5. Форма авторизації -->
+        <form name="login" class="auth-form" onsubmit="return validateLogin()">
+            <h2>Вхід</h2>
+
+            <p>Email:<br>
+                <input type="text" id="email" placeholder="yourmail@gmail.com">
+                <span id="emailf" class="error"></span></p>
+
+            <p>Пароль:<br>
+                <input type="password" id="password">
+                <span id="passwordf" class="error"></span></p>
+
+            <input type="submit" value="Увійти" class="btn">
+            <p id="loginResult" class="success"></p>
+        </form>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>Розробник: Тахтай Н.В., група ІТ-41/1</p>
+    <p>Лабораторна робота №8. Варіант 17.</p>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

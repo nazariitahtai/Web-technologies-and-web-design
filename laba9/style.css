@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ec;
+    color: #2d2a26;
+}
+
+.header {
+    background-color: #2f4858;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header h1 {
+    font-size: 34px;
+    color: #f6ae2d;
+}
+
+.page {
+    display: flex;
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    align-items: flex-start;
+}
+
+.shop {
+    flex: 1;
+}
+
+h2 {
+    margin: 10px 0 15px;
+    color: #2f4858;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 8px 0 4px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f26419;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #d4520f;
+}
+
+.card button:disabled {
+    background-color: #b8b2a7;
+    cursor: default;
+}
+
+.basket {
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 15px;
+}
+
+.basket ul {
+    list-style: none;
+}
+
+.basket li {
+    padding: 7px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.basket li span {
+    display: inline-block;
+    width: 75px;
+    color: #f26419;
+    font-weight: bold;
+}
+
+#emptyBasket {
+    color: #8a847a;
+}
+
+.error {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #2f4858;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 900px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .basket {
+        width: 100%;
+    }
+}

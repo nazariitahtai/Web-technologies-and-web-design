@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №9 - Кошик товарів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Крок і Кошик</h1>
+    <p>Магазин взуття та продуктів</p>
+</header>
+
+<div class="page">
+
+    <main class="shop">
+        <p id="error" class="error"></p>
+
+        <h2>Взуття</h2>
+        <div id="shoes" class="cards"></div>
+
+        <h2>Продукти</h2>
+        <div id="groceries" class="cards"></div>
+    </main>
+
+    <aside class="basket">
+        <h2>Кошик (<span id="basketCount">0</span>)</h2>
+        <p id="emptyBasket">Кошик порожній</p>
+        <ul id="basketList"></ul>
+    </aside>
+
+</div>
+
+<footer class="footer">
+    <p>Лабораторна робота №9. Тахтай Н.В., група ІТ-41/1</p>
+</footer>
+
+<script src="store.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Кросівки",
+        "category": "shoe",
+        "amount": 3,
+        "image": "images/sneakers.svg"
+    },
+    {
+        "name": "Черевики",
+        "category": "shoe",
+        "amount": 2,
+        "image": "images/boots.svg"
+    },
+    {
+        "name": "Сандалі",
+        "category": "shoe",
+        "amount": 4,
+        "image": "images/sandals.svg"
+    },
+    {
+        "name": "Капці",
+        "category": "shoe",
+        "amount": 1,
+        "image": "images/slippers.svg"
+    },
+    {
+        "name": "Яблука",
+        "category": "grocerie",
+        "amount": 5,
+        "image": "images/apple.svg"
+    },
+    {
+        "name": "Хліб",
+        "category": "grocerie",
+        "amount": 3,
+        "image": "images/bread.svg"
+    },
+    {
+        "name": "Молоко",
+        "category": "grocerie",
+        "amount": 2,
+        "image": "images/milk.svg"
+    },
+    {
+        "name": "Сир",
+        "category": "grocerie",
+        "amount": 1,
+        "image": "images/cheese.svg"
+    }
+]
